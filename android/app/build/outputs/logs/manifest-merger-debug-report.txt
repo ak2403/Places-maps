@@ -1,0 +1,133 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a55f11908ee1a6d319c27b5ea4a3cce6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/381bf2c31b80506e8ba2d67b821828a9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b26c2397620d01c7834ebf3d4164346d/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6f6d7a3a25f063c53f706107e80131f0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/cec4189671b912bb3394101c550c01a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f23aff5eaa1ef7e197d762f51b7bfc3d/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ab535ef03eb4f7185ce01b06fe9f2c08/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/5157f6477f6a48a4f0a81480393c26be/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/b4065a9ceeb0d9125658b1a6a5c7511e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/7461feda812411637d6b47d257ee2e33/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/98251020ca8de70778e5fc89b6f0b352/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:2:5-23
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a55f11908ee1a6d319c27b5ea4a3cce6/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a55f11908ee1a6d319c27b5ea4a3cce6/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/381bf2c31b80506e8ba2d67b821828a9/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/381bf2c31b80506e8ba2d67b821828a9/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f23aff5eaa1ef7e197d762f51b7bfc3d/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f23aff5eaa1ef7e197d762f51b7bfc3d/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ab535ef03eb4f7185ce01b06fe9f2c08/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ab535ef03eb4f7185ce01b06fe9f2c08/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.maps.MainActivity
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/ea5cbd3b16f1c122c0925b5453deaaf2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a55f11908ee1a6d319c27b5ea4a3cce6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a55f11908ee1a6d319c27b5ea4a3cce6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/381bf2c31b80506e8ba2d67b821828a9/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/381bf2c31b80506e8ba2d67b821828a9/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b26c2397620d01c7834ebf3d4164346d/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b26c2397620d01c7834ebf3d4164346d/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6f6d7a3a25f063c53f706107e80131f0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6f6d7a3a25f063c53f706107e80131f0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/cec4189671b912bb3394101c550c01a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/cec4189671b912bb3394101c550c01a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f23aff5eaa1ef7e197d762f51b7bfc3d/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f23aff5eaa1ef7e197d762f51b7bfc3d/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/5157f6477f6a48a4f0a81480393c26be/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/5157f6477f6a48a4f0a81480393c26be/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/b4065a9ceeb0d9125658b1a6a5c7511e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/b4065a9ceeb0d9125658b1a6a5c7511e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/7461feda812411637d6b47d257ee2e33/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/7461feda812411637d6b47d257ee2e33/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/98251020ca8de70778e5fc89b6f0b352/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/akspikey/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/98251020ca8de70778e5fc89b6f0b352/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/akspikey/Documents/GitHub/native-app/maps/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
