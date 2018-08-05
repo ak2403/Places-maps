@@ -1,48 +1,30 @@
 import React from 'react';
-import { StyleSheet, Button, View, Text, TextInput } from 'react-native';
-import ListItem from './src/components/listitems/listitems';
+import { StyleSheet, Text, Image, NavigatorIOS, TextInput, View, Button } from 'react-native';
+import UIInput from './src/components/UIComponent/InputComponent';
 
 export default class App extends React.Component {
 
   state = {
-    inputVal: '',
-    places: []
+    username: '',
+    password: ''
   }
 
-  saveInputMethod = value => {
-    this.setState({
-      inputVal: value
-    })
-  }
-
-  savePlacesMethod = () => {
-    this.setState(previous => {
-      return {
-        places: previous.places.concat(previous.inputVal)
-      }
-    })
+  onSubmit = () => {
+    alert(JSON.stringify(this.state))
   }
 
   render() {
-    const textHTML = this.state.places.map((val, index) => {
-      return <ListItem key={index} placeName={val} />
-    });
     
     return (
       <View style={styles.container}>
-        <View style={styles.formContainer}>
-          <TextInput
-            placeholder="Name"
-            onChangeText={this.saveInputMethod}
-            style={styles.formInput} />
-          <Button
-            onPress={this.savePlacesMethod}
-            style={styles.formButton} 
-            title="Add" />
-        </View>
-          {textHTML}
-        <View>
-
+        <View style={styles.loginView}>
+            <Image source={require("./src/img/logo.png")} style={styles.logoImg} />
+            <UIInput changeEvent={value => this.setState({username: value})} />
+            <UIInput secureText = 'true' changeEvent={value => this.setState({password: value})} />
+            <Button
+              onPress={this.onSubmit} 
+              title='Sign In'/>
+            <Text>Forgotten Password ?</Text>
           </View>
       </View>
     );
@@ -51,22 +33,19 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   },
-  formContainer: {
+  loginView: {
+    flex: 1,
     width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
   },
-  formInput: {
-    width: '70%'
-  },
-  formButton: {
-    width: '30%'
+  logoImg: {
+    width: 200,
+    height: 200
   }
 });
