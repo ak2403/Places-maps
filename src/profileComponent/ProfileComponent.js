@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, Image, NavigatorIOS, TextInput, View, Button } from 'react-native';
+import NavigationComponent from '../components/UIComponent/navigationComponent';
 
 class ProfileComponent extends React.Component {
 
     render() {
         return (
+            <View>
             <View style={{alignItems: 'center', backgroundColor: '#faf8f8', flex: 1}}>
                 <View style={styles.bannerStyle}>
                     <Image source="../img/logo.png" />
@@ -25,6 +27,8 @@ class ProfileComponent extends React.Component {
                     <Text>Address: 3, Magnolia Grove, Doveton, VIC 3177</Text>
                 </View>
                 </View>
+            </View>
+            <NavigationComponent />
             </View>
         )
     }

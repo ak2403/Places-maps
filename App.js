@@ -13,7 +13,6 @@ class App extends React.Component {
 
   async componentDidMount() {
     let getUser = await AsyncStorage.getItem('username');
-    console.log(getUser)
     if(getUser){
       this.props.alreadyLogged(getUser)
     }
@@ -23,7 +22,8 @@ class App extends React.Component {
     return (
       <NavigatorIOS
         initialRoute={{
-          component: LoginComponent
+          component: LoginComponent,
+          title: ''
         }}
         style={{ flex: 1 }}
         navigationBarHidden={true}

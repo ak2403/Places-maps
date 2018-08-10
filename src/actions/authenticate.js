@@ -34,13 +34,3 @@ export const alreadyLogged = (data) => {
         }
     }
 }
-
-export const logout = () => {
-    return (dispatch) => {
-        AsyncStorage.removeItem('username').then(() => {
-            dispatch({
-                type: 'logout'
-            })
-        });
-    }
-}
