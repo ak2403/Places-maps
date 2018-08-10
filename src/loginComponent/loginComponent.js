@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, Image, NavigatorIOS, TextInput, View, Button } from 'react-native';
 import UIInput from '../components/UIComponent/InputComponent';
-import { authCheck } from '../actions';
+import { authCheck } from '../actions/authenticate';
 import DashBoardComponent from '../dashBoardComponent/dashBoardComponent';
+import SignUpComponent from '../signupComponent/signupComponent';
 
 class LoginComponent extends React.Component {
 
@@ -16,11 +17,14 @@ class LoginComponent extends React.Component {
         this.props.authCheck(this.state);
     }
 
-    componentDidMount() {
+    redirectSignUp = () => {
+        this.props.navigator.push({
+            component: SignUpComponent
+        });
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        if (nextProps.isAuth) {
+        if (nextProps.isAuth || nextProps.authUser) {
             this.props.navigator.push({
                 component: DashBoardComponent
             });
@@ -42,6 +46,7 @@ class LoginComponent extends React.Component {
                         onPress={this.onSubmit}
                         title='Sign In' />
                     <Text>Forgotten Password ?</Text>
+                    <Text onPress={this.redirectSignUp}>Create an account</Text>
                 </View>
             </View>
         );
@@ -76,7 +81,8 @@ const mapDispatchToProps = dispatch => {
 const mapStateToProps = (props) => {
     return {
         isAuth: props.authenication.isAuth,
-        errorMsg: props.authenication.authErrorMsg
+        errorMsg: props.authenication.authErrorMsg,
+        authUser: props.authenication.authUser
     }
 }
 

@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest": "^23.4.2",
     "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.3.1"
+    "native-base": "^2.7.2",
+    "react-test-renderer": "16.3.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-native start",
@@ -18,12 +21,10 @@
     "preset": "react-native"
   },
   "dependencies": {
-    "native-base": "^2.7.2",
     "react": "16.3.1",
     "react-native": "~0.55.2",
     "react-native-rename": "^2.2.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux": "^4.0.0"
   }
 }

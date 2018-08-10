@@ -1,9 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { NavigatorIOS } from 'react-native';
+import { NavigatorIOS, AsyncStorage } from 'react-native';
 import LoginComponent from './src/loginComponent/loginComponent';
+import SignUpComponent from './src/signupComponent/signupComponent';
+import { alreadyLogged } from './src/actions/authenticate';
 
 class App extends React.Component {
+
+  constructor(){
+    super();
+  }
+
+  async componentDidMount() {
+    let getUser = await AsyncStorage.getItem('username');
+    console.log(getUser)
+    if(getUser){
+      this.props.alreadyLogged(getUser)
+    }
+  }  
 
   render() {
     return (
@@ -11,11 +25,17 @@ class App extends React.Component {
         initialRoute={{
           component: LoginComponent
         }}
-        style={{flex: 1}}
+        style={{ flex: 1 }}
         navigationBarHidden={true}
       />
     );
   }
 }
 
-export default connect()(App);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    alreadyLogged: (data) => dispatch(alreadyLogged(data))
+  }
+}
+
+export default connect('', mapDispatchToProps)(App);
