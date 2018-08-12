@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, NavigatorIOS, TextInput, View, Button } from 'react-native';
 import { connect } from 'react-redux';
 import ProfileComponent from '../../profileComponent/ProfileComponent';
+import DashBoardComponent from '../../dashBoardComponent/dashBoardComponent';
 
 class NavigationComponent extends React.Component {
 
@@ -22,7 +23,7 @@ class NavigationComponent extends React.Component {
             component: ProfileComponent
          },{
              title: 'dashboard',
-             component: ''
+             component: DashBoardComponent
          },{
             title: 'career',
             component: ''

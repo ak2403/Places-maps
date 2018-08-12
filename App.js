@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { NavigatorIOS, AsyncStorage } from 'react-native';
 import LoginComponent from './src/loginComponent/loginComponent';
 import SignUpComponent from './src/signupComponent/signupComponent';
+import DashBoardComponent from './src/dashBoardComponent/dashBoardComponent';
 import { alreadyLogged } from './src/actions/authenticate';
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
     return (
       <NavigatorIOS
         initialRoute={{
-          component: LoginComponent,
+          component: DashBoardComponent,
           title: ''
         }}
         style={{ flex: 1 }}
