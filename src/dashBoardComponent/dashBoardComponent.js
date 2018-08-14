@@ -2,16 +2,23 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, ScrollView, FlatList, View, Button, AsyncStorage, TouchableOpacity } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import HeaderComponent from '../components/HeaderComponent/HeaderComponent';
 import ProfileComponent from '../profileComponent/ProfileComponent';
 import LoginComponent from '../loginComponent/loginComponent';
 import NavigationComponent from '../components/UIComponent/navigationComponent';
 import EditionComponent from '../editionComponent/EditionComponent';
 import * as data from '../data/byte_edition';
+import YearNavigation from '../components/YearNavigation/YearNavigation';
 
 class DashBoardComponent extends React.Component {
 
-    state = {
-        editionList: ''
+    constructor(){
+        super();
+        this.state = {
+            editionList: '',
+            selectedYear: '',
+            selectedEdition: ''
+        }
     }
 
     redirectProfile = () => {
@@ -19,58 +26,44 @@ class DashBoardComponent extends React.Component {
             component: ProfileComponent
         });
     }
-
-    logout = async () => {
-        const removeUser = await AsyncStorage.removeItem('username');
-        this.props.navigator.push({
-            component: LoginComponent
-        })
-    }
-
+    
     renderEdition = (version) => {
         let edition_collection = [];
         for (edition in data[version]) {
             edition_collection.push(edition)
         }
         this.setState({
-            editionList: edition_collection
+            editionList: edition_collection,
+            selectedYear: version
         })
     }
 
     redirectEdition = (item) => {
         this.props.navigator.push({
-            component: EditionComponent
+            component: EditionComponent,
+            props: {
+                editionContent: data[this.state.selectedYear][item]
+            }
         })
     }
 
     render() {
-        let byte_version = ['2018 (past editions)', '2017', '2016']
-        let version_nav = byte_version.map(version => {
-            return (
-                <TouchableOpacity onPress={() => this.renderEdition(version)} style={{ 'width': '30%', 'height': 30, paddingLeft: 5, paddingRight: 5, justifyContent: 'center', alignItems: 'center', borderWidth: 1 }} key={version}>
-                    <View>
-                        <Text>{version}</Text>
-                    </View>
-                </TouchableOpacity>
-            )
-        })
+        
         return (
-            <View style={{ flex: 1 }}>
-                <View>
-                    <Button title='Logout' onPress={this.logout} />
-                </View>
-                <View style={{ 'width': '100%', 'height': 30, flexDirection: 'row', justifyContent: 'center' }}>
-                    {version_nav}
-                </View>
+            <View style={{ flex: 1, backgroundColor: '#f0f0f0' }}>
+                <HeaderComponent title="Dash Board" navigator={this.props.navigator} />
+
+                <YearNavigation yearClick={this.renderEdition} />
+
                 <ScrollView>
-                {this.state.editionList ? <FlatList
-                    data={this.state.editionList}
-                    renderItem={({ item }) => (
-                        <ListItem 
-                        button onPress={() => this.redirectEdition(item)}
-                        title={item} />
-                    )}
-                /> : ''}
+                    {this.state.editionList ? <FlatList
+                        data={this.state.editionList}
+                        renderItem={({ item }) => (
+                            <ListItem
+                                button onPress={() => this.redirectEdition(item)}
+                                title={item} />
+                        )}
+                    /> : ''}
                 </ScrollView>
                 <NavigationComponent navigator={this.props.navigator} />
             </View>
@@ -79,7 +72,6 @@ class DashBoardComponent extends React.Component {
 }
 
 const styles = StyleSheet.create({
-
 });
 
 export default connect()(DashBoardComponent);

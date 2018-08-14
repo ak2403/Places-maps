@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     naviTabs: {
         display: 'flex',
         flex: 1,
-        backgroundColor: 'blue',
+        backgroundColor: '#5e4584',
         height: 60,
         alignItems: 'center',
         justifyContent: 'center'
