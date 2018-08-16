@@ -4,6 +4,7 @@ import { NavigatorIOS, AsyncStorage } from 'react-native';
 import LoginComponent from './src/loginComponent/loginComponent';
 import SignUpComponent from './src/signupComponent/signupComponent';
 import DashBoardComponent from './src/dashBoardComponent/dashBoardComponent';
+import EditionComponent from './src/editionComponent/EditionComponent';
 import { alreadyLogged } from './src/actions/authenticate';
 
 class App extends React.Component {

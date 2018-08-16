@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, NavigatorIOS, TextInput, View, Button } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import { connect } from 'react-redux';
-import ProfileComponent from '../../profileComponent/ProfileComponent';
 import DashBoardComponent from '../../dashBoardComponent/dashBoardComponent';
+import { themeColor } from '../../constants';
 
 class NavigationComponent extends React.Component {
 
@@ -19,16 +20,12 @@ class NavigationComponent extends React.Component {
 
     render() {
         let NaviItems = [{
-            title:'Profile',
-            component: ProfileComponent
-         },{
-             title: 'dashboard',
+             title: 'Dashboard',
+             icon: 'atlas',
              component: DashBoardComponent
          },{
-            title: 'career',
-            component: ''
-        },{
-            title: 'settings',
+            title: 'Career',
+            icon: 'user-tie',
             component: ''
         }];
 
@@ -36,9 +33,12 @@ class NavigationComponent extends React.Component {
             <View style={styles.navigationLayout}>
                 {
                     NaviItems.map(item => {
-                        return (<TouchableOpacity key={item.title} style={styles.naviTabs} onPress={()=>this.openTabs(item)}><View>
-                            <Text>{item.title}</Text>
-                        </View></TouchableOpacity>)
+                        return (<TouchableOpacity key={item.title} style={styles.naviTabs} onPress={()=>this.openTabs(item)}>
+                                    <View>
+                                        <Icon name={item.icon} size={14} color='#fff' />
+                                        <Text style={styles.naviText}>{item.title}</Text>
+                                    </View>
+                                </TouchableOpacity>)
                     })
                 }
                 
@@ -49,9 +49,9 @@ class NavigationComponent extends React.Component {
 
 const styles = StyleSheet.create({
     navigationLayout: {
-        backgroundColor: 'red',
+        backgroundColor: themeColor,
         width: '100%',
-        height: 60,
+        height: 45,
         position: 'absolute',
         bottom: 0,
         alignItems: 'center',
@@ -61,10 +61,13 @@ const styles = StyleSheet.create({
     naviTabs: {
         display: 'flex',
         flex: 1,
-        backgroundColor: '#5e4584',
-        height: 60,
-        alignItems: 'center',
-        justifyContent: 'center'
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    naviText: {
+        fontSize: 14,
+        textAlign: 'center'
     }
 });
 

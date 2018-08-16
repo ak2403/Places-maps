@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ListView } from 'react-native';
-
+import { themeColor } from '../../constants';
 
 class YearNavigation extends React.Component {
     constructor() {
@@ -19,6 +19,7 @@ class YearNavigation extends React.Component {
                     automaticallyAdjustContentInsets={false}
                     dataSource={this.state.dataSource}
                     renderRow={(data) => <Text onPress={() => this.props.yearClick(data)} style={styles.year}> {data}</Text>}
+                    keyExtractor={(item, index) => index}
                 />
             </TouchableOpacity>
         )
@@ -36,12 +37,12 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 10,
         justifyContent: 'space-between',
-        borderColor: '#6a2c90',
+        borderColor: themeColor,
         borderRadius: 5,
         borderWidth: 1.5
     },
     year: {
-        borderColor: '#6a2c90',
+        borderColor: themeColor,
         borderWidth: 1,
         width: 20,
         flex: 1,

@@ -8,6 +8,7 @@ import Reducers from './src/reducers';
 
 const store = createStore(Reducers, applyMiddleware(thunk));
 console.ignoredYellowBox = ['Remote debugger'];
+console.disableYellowBox = true;
 const notes = () => (
     <Provider store={store}>
         <App />
